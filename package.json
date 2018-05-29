@@ -1,0 +1,20 @@
+{
+    "name": "yunye-loadmore",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Blists/yunye-loadmore.git"
+    },
+    "keywords": ["loadmore", "vue"],
+    "author": "xwc",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Blists/yunye-loadmore/issues"
+    },
+    "homepage": "https://github.com/Blists/yunye-loadmore#readme"
+}
