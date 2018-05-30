@@ -6,33 +6,33 @@
 ### 使用
 ```
 <template>
-	<yy-loadmore @pull="pull" @loadmore="loadmore" :loading="loading" :all-loaded="allLoaded">
-		...
-	</yyloadmore>
+    <yy-loadmore @pull="pull" @loadmore="loadmore" :loading="loading" :all-loaded="allLoaded">
+        ...
+    </yyloadmore>
 </template>
 <script>
 //引入
 import YyLoadmore from "yunye-loadmore";
 export default {
     components: { YyLoadmore },
-	data(){
-		return {
-			loading: false,
-			allLoaded: false
-		}
-	},
-	methods: {
-		pull() {},
-		loadmore() {
-			this.loading  =  true;
-			setTimeout(() => {
-				this.loading  =  false;
-				setTimeout(() => {
-					this.allLoaded  =  true;
-				}, 1000);
-			}, 1000);
-		}
-	}
+    data(){
+        return {
+            loading: false,
+            allLoaded: false
+        }
+    },
+    methods: {
+        pull() {},
+        loadmore() {
+            this.loading  =  true;
+            setTimeout(() => {
+                this.loading  =  false;
+                setTimeout(() => {
+                    this.allLoaded  =  true;
+                }, 1000);
+            }, 1000);
+        }
+    }
 }
 </script>
 ```
@@ -45,8 +45,8 @@ export default {
 
 ### 属性
 
-| 属性名称 | 说明 | 类型 | 默认值|
-|---|---|---|--|
+| 属性名称 | 说明 | 类型 | 默认值 |
+| -------- | ---- | ---- |--|
 | loading | 是否在加载中 | Boolean | false |
 | allLoaded | 是否全部加载完 | Boolean | false |
 | topDistance | 下拉刷新的下拉的距离 | Number | 40 |
