@@ -10,9 +10,11 @@
 		...
 	</yyloadmore>
 </template>
+<script>
 //引入
 import YyLoadmore from "yunye-loadmore";
 export default {
+    components: { YyLoadmore },
 	data(){
 		return {
 			loading: false,
@@ -32,6 +34,7 @@ export default {
 		}
 	}
 }
+</script>
 ```
 ### 事件
 
